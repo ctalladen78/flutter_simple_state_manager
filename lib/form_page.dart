@@ -37,7 +37,7 @@ class UpdateUserForm extends StatelessWidget {
             }
 
             container.todoBloc.addTodo(
-              data: firstName
+              data: {"firstName":firstName,"lastName":lastName,"email":email}
             );
 
             Navigator.pop(context);
